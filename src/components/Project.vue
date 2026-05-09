@@ -288,7 +288,7 @@ onMounted(() => {
               class="bg-gray-100 border-4 border-gray-800 rounded-3xl p-6 shadow-[8px_8px_0px_gray] flex flex-col items-center justify-center hover:-translate-y-2 transition duration-300"
             >
               <img
-                src="https://devicon-website.vercel.app/api/javascript/original.svg"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
                 class="w-16 h-16 mb-4"
               />
               <p class="font-black text-lg">JS</p>
@@ -308,7 +308,7 @@ onMounted(() => {
               class="bg-gray-100 border-4 border-gray-800 rounded-3xl p-6 shadow-[8px_8px_0px_gray] flex flex-col items-center justify-center hover:-translate-y-2 transition duration-300"
             >
               <img
-                src="https://devicon-website.vercel.app/api/nodejs/original-wordmark.svg"
+               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
                 class="w-16 h-16 mb-4"
               />
               <p class="font-black text-lg">Nodejs</p>
@@ -329,7 +329,7 @@ onMounted(() => {
               class="bg-gray-100 border-4 border-gray-800 rounded-3xl p-6 shadow-[8px_8px_0px_gray] flex flex-col items-center justify-center hover:-translate-y-2 transition duration-300"
             >
               <img
-                src="https://devicon-website.vercel.app/api/csharp/original.svg"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
                 class="w-16 h-16 mb-4"
               />
               <p class="font-black text-lg">C#</p>
@@ -338,7 +338,7 @@ onMounted(() => {
               class="bg-gray-100 border-4 border-gray-800 rounded-3xl p-6 shadow-[8px_8px_0px_gray] flex flex-col items-center justify-center hover:-translate-y-2 transition duration-300"
             >
               <img
-                src="https://devicon-website.vercel.app/api/dot-net/original.svg"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg"
                 class="w-16 h-16 mb-4"
               />
               <p class="font-black text-lg">.Net</p>
@@ -359,7 +359,7 @@ onMounted(() => {
             <div
               class="bg-gray-100 border-4 border-gray-800 rounded-3xl p-6 shadow-[8px_8px_0px_gray] flex flex-col items-center justify-center hover:-translate-y-2 transition duration-300">
               <img
-                src="https://devicon-website.vercel.app/api/mongodb/original.svg"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
                 class="w-16 h-16 mb-4"
               />
               <p class="font-black text-lg">MongoDB</p>
