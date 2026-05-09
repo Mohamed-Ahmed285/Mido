@@ -1,0 +1,15 @@
+.neo-card{
+  border: 4px solid black;
+  border-radius: 24px;
+}
+
+.neo-shadow{
+  box-shadow: 8px 8px 0px black;
+}
+
+.neo-button{
+  border: 4px solid black;
+  border-radius: 12px;
+  padding: 12px 20px;
+  font-weight: bold;
+}
