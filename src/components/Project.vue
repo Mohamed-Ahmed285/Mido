@@ -106,14 +106,21 @@ const certificates = [
 const show = ref(false);
 
 onMounted(() => {
+  // 1. Check the screen width (768px is the standard mobile breakpoint)
+  // If it's under 768, use 0.05. If it's over, use 0.2.
+  const currentThreshold = window.innerWidth < 768 ? 0.05 : 0.2;
+
   const observer = new IntersectionObserver(
     ([entry]) => {
       if (entry.isIntersecting) {
         show.value = true;
+        // Optional: Stop observing once the animation triggers to save resources
+        observer.disconnect(); 
       }
     },
     {
-      threshold: 0.2,
+      // 2. Use your new dynamic variable here instead of a hardcoded number
+      threshold: currentThreshold, 
     },
   );
 
