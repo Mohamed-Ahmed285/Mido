@@ -11,8 +11,8 @@ import { Github, Instagram, Linkedin } from "lucide-vue-next";
         <h1 class="text-3xl font-black mb-4">Mido</h1>
 
         <p class="font-bold text-gray-700 leading-relaxed max-w-sm text-1xl">
-        Frontend enthusiast focused on building modern, responsive, 
-        and interactive websites using ReactJS & DotNet.
+        Web enthusiast focused on building modern, responsive, 
+        and interactive websites.
         </p>
       </div>
 
