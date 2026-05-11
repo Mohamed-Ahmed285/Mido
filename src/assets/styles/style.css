@@ -3,6 +3,8 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  scrollbar-gutter: stable;
+
 }
 
 @media (max-width: 414px) {
@@ -89,4 +91,48 @@ body {
 .pop-leave-to {
   opacity: 0;
   transform: translateY(25px);
+}
+
+/* Circle Countdown Animation */
+.animate-countdown {
+  /* Set the length of the stroke to the circle's circumference */
+  stroke-dasharray: 50.26;
+  /* Animate it over exactly 5 seconds (matching your JS timeout) */
+  animation: countdown 5s linear forwards;
+}
+
+@keyframes countdown {
+  0% {
+    stroke-dashoffset: 0;
+    /* Fully colored ring */
+  }
+
+  100% {
+    stroke-dashoffset: 50.26;
+    /* Ring is completely empty */
+  }
+}
+
+/* Fade Transition (if you haven't added it yet) */
+/* Upgraded Fade & Collapse Transition */
+.fade-enter-active,
+.fade-leave-active {
+  /* Animate height, opacity, and margin together */
+  transition: max-height 0.5s ease, opacity 0.5s ease, margin-top 0.5s ease;
+
+  /* Set a max-height just a bit taller than your text will ever be */
+  max-height: 60px;
+
+  /* Hide the content as the box shrinks */
+  overflow: hidden;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+  max-height: 0;
+
+
+  /* This shrinks the 'mt-4' (margin-top) gap you have on the div */
+  margin-top: 0;
 }
