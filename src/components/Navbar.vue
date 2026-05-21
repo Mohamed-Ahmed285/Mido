@@ -2,6 +2,9 @@
 import { ref } from "vue";
 
 const isOpen = ref(false);
+const refreshPage = () => {
+  window.location.reload();
+};
 </script>
 
 <template>
@@ -13,7 +16,8 @@ const isOpen = ref(false);
        <div class="flex gap-1 items-center justify-between" >    
           <img
             src="../../public/images/logo.png"
-            class="w-14 h-8 drop-shadow-lg hover:translate-x-1 hover:translate-y-1 hover:drop-shadow-none transition duration-200"/>
+            @click="refreshPage"
+            class="cursor-pointer w-14 h-8 drop-shadow-lg hover:translate-x-1 hover:translate-y-1 hover:drop-shadow-none transition duration-200"/>
           <!-- <h1 class="text-2xl font-black">
             Mido
           </h1> -->
