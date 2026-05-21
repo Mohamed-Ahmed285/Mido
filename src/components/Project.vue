@@ -14,6 +14,7 @@ import cert2 from "../assets/images/cert2.png";
 import cert3 from "../assets/images/cert3.png";
 import cert4 from "../assets/images/cert4.jpg";
 import cert5 from "../assets/images/cert5.jpg";
+import cert6 from "../assets/images/cert6.png";
 
 const activeTab = ref("projects");
 
@@ -101,6 +102,9 @@ const certificates = [
   },
   {
     image: cert5,
+  },
+  {
+    image: cert6,
   },
 ];
 const show = ref(false);
