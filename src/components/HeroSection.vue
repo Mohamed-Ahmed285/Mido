@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted } from "vue";
+import { Github, Mail, Linkedin } from "lucide-vue-next";
 
 const show = ref(false);
 
@@ -34,8 +35,7 @@ const downloadCV = () => {
   <section
     id="home"
     :class="show ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'"
-    class="min-h-screen flex items-center justify-center px-2 sm:px-6 md:px-16 py-22 transition-all duration-700 ease-out"
-  >
+    class="min-h-screen flex items-center justify-center px-2 sm:px-6 md:px-16 py-22 transition-all duration-700 ease-out">
     <div class="max-w-7xl w-full grid md:grid-cols-2 gap-12 items-center">
       <!-- TEXT -->
       <div class="rounded-3xl p-8 md:p-12">
@@ -57,7 +57,7 @@ const downloadCV = () => {
         </p>
 
         <div
-          class="flex flex-row flex-wrap md:justify-start gap-4 w-full"
+          class="flex flex-row flex-wrap md:justify-start gap-4 w-full mb-4"
         >
           <!-- BUTTON PROJECT -->
           <a
@@ -75,6 +75,36 @@ const downloadCV = () => {
             Download CV
           </button>
         </div>
+
+        <!-- SOCIAL -->
+          <div class="flex gap-4 flex-wrap flex flex-row flex-wrap md:justify-start gap-4">
+            <!-- GITHUB -->
+            <a
+              href="https://github.com/Mohamed-Ahmed285"
+              target="_blank"
+              class="bg-orange-500 border-4 border-gray-800 md:px-2.5 py-2.5 text-white shadow-[4px_4px_0px_gray] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition duration-200"
+            >
+              <Github :size="20" />
+            </a>
+
+            <!-- Email -->
+            <a
+              href="#contact"
+              class="bg-white border-4 border-gray-800 md:px-2.5 py-2.5 shadow-[4px_4px_0px_gray] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition duration-200"
+            >
+              <Mail :size="20" />
+            </a>
+
+            <!-- LINKEDIN -->
+            <a
+              href="https://www.linkedin.com/in/mohamed-ahmed-3034872aa/"
+              target="_blank"
+              class="bg-blue-500 text-white border-4 border-gray-800 md:px-2.5 py-2.5 shadow-[4px_4px_0px_gray] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition duration-200"
+            >
+              <Linkedin :size="20" />
+            </a>
+          </div>
+    
       </div>
 
       <!-- IMAGE -->
